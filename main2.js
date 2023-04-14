@@ -49,7 +49,7 @@ function gameField(fieldSize) {
 console.log(arrayCompare);
 
 function compareCards(fieldSize) {
-  setInterval(() => {
+  setTimeout(() => {
     if (arrayCompare.length == 2) {
       if (arrayCompare[0].textContent == arrayCompare[1].textContent) {
         for (let i = 0; i < 2; i++) {
@@ -66,6 +66,7 @@ function compareCards(fieldSize) {
           }
         }
       } else {
+        ///////
         console.log("false");
         for (let i = 0; i < arrayCompare.length; i++) {
           arrayCompare[i].removeAttribute("disabled");
@@ -74,5 +75,5 @@ function compareCards(fieldSize) {
       }
       arrayCompare = [];
     }
-  }, 1500);
+  }, 800);
 }
