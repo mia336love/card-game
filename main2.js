@@ -58,6 +58,12 @@ function compareCards(fieldSize) {
 
         if (arrayRight.length == fieldSize) {
           alert("Вы победили!");
+          let answer = confirm("Хотите сыграть снова?");
+          if (answer == true) {
+            location.reload();
+          } else {
+            alert("Спасибо за игру");
+          }
         }
       } else {
         console.log("false");
