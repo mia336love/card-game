@@ -63,6 +63,7 @@ function match(cardOne, cardTwo) {
 
 // не закрывает карты
 restartBtn.addEventListener("click", () => {
-  mixCards();
-  clickOnCard();
+  // mixCards();
+  // clickOnCard();
+  location.reload();
 });
