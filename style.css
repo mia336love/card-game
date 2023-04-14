@@ -44,6 +44,7 @@ body {
   border: 2px solid #dcdcdc;
   background-color: #f2f2f2;
   transform: rotateY(90deg);
+  transition: 0.2s;
 }
 
 .back {
@@ -60,13 +61,16 @@ img {
 
 .flip {
   transform: rotateY(0deg);
+  transition: 0.2s;
 }
 .match {
   transform: rotateY(0deg);
+  transition: 0.2s;
 }
 
 .show {
   transform: rotateY(0deg);
+  transition: 0.2s;
 }
 
 button {

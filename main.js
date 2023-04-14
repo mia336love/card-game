@@ -6,12 +6,15 @@ const restartBtn = document.getElementById("restart");
 function mixCards() {
   card.forEach((id) => {
     // определение нового порядкового номера карт
-    const num = [...Array(card.length).keys()];
+    const newId = [...Array(card.length).keys()];
+    // console.log(newId);
 
     // генерация от 0 до до длины массива карт
     const random = Math.floor(Math.random() * card.length);
 
-    id.style.order = num[random];
+    // добавить смешивание через order (css)
+    id.style.order = newId[random];
+    console.log(newId[random]);
   });
 }
 mixCards();
@@ -23,6 +26,8 @@ function clickOnCard() {
       front[i].classList.add("flip");
       const flippedCard = document.querySelectorAll(".flip");
 
+      console.log(flippedCard);
+      // console.log(card);
       // проверить, сколько карт перевернуто
       // если 2, то блокнуть
       if (flippedCard.length == 2) {
